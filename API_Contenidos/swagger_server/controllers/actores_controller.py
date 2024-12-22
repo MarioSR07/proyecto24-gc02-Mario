@@ -16,7 +16,7 @@ def actores_get():  # noqa: E501
     :rtype: List[Actor]
     """
     actors = []
-    for info in db.dbGetActors():
+    for info in db.db_get_actors:
         actor = Actor(info[0], info[1], info[2])
         actors.append(actor.to_dict())
     return actors

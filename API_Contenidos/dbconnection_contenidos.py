@@ -21,7 +21,7 @@ def dbConectarContenidos():
         print(error)
         return None
 
-def dbGetActors():
+def db_get_actors():
     print("---dbGetActors---")
     actors = []
     try:
